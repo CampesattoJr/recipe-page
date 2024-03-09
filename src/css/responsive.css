@@ -1,0 +1,41 @@
+@media(max-width: 450px){
+    .recipe-page{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .recipe-page .image{
+        border-radius: 0;
+    }
+
+    .recipe-page .description{
+        margin: 0 32px;
+    }
+
+    .description h1{
+        font-size: 2.1rem;
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description p{
+        line-height: 130%;
+    }
+
+    .recipe-page .prep-time{
+        margin: 0 50px 30px;
+    }
+
+    .recipe-page .ingredients{
+        padding: 0 32px;
+    }
+
+    .recipe-page .instructions{
+        margin: 0 32px;
+    }
+
+    .recipe-page .nutrition{
+        margin: 0 32px;
+    }
+}

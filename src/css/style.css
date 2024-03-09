@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html{
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: var(--beckground-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recipe-page{
+    width: 740px;
+    background-color: #fff;
+    padding: 40px;
+    margin: 80px;
+    border-radius: 25px;
+}
+
+.recipe-page .image{
+    max-width: 100%;
+    border-radius: 17.50px;
+}
+
+.recipe-page .description{
+    display: flex;
+    flex-direction: column;
+}
+
+.description h1{
+    font-size: 2.5rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin: 30px 0 18px;
+    color: var(--h1-primary);
+}
+
+.description p{
+    line-height: 23px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.recipe-page .prep-time{
+    background-color: var(--beckground-prep);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.prep-time h3{
+    color: var(--h3-primary);
+    font-weight: 600;
+    font-size: 1.25rem; 
+    margin-bottom: 15px;   
+}
+
+.prep-time .list-prep{
+    list-style-position: inside;
+}
+
+.list-prep li{
+    margin-left: 7px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.list-prep li:last-child{
+    margin-bottom: 0;
+}
+
+.list-prep li::marker{
+    color: var(--h3-primary);
+    font-size: 12px;
+}
+
+.margin-left{
+    margin-left: 12px;
+}
+
+.text-bold{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.sub-title{
+    font-size: 1.8rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: var(--h2-primary);
+    margin-bottom: 20px;
+}
+
+.recipe-page .ingredients{
+    margin-bottom: 26px;
+    border-bottom: solid 1px var(--ligne-color);
+    padding-bottom: 23px;
+}
+
+.ingredients .list-ingredients{
+    list-style-position: inside;
+}
+
+.list-ingredients li{
+    margin-left: 10px;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.list-ingredients li::marker{
+    color: var(--h2-primary);
+    font-size: 12px;
+}
+
+.recipe-page .instructions{
+    margin-bottom: 26px;
+    border-bottom: solid 1px var(--ligne-color);
+    padding-bottom: 23px;
+}
+
+.instructions h2.numbered{
+    counter-reset: mynum;
+}
+
+.instructions p.numbered{
+    margin: 0 0 8px 40px;
+    padding-right: 10px;
+    line-height: 145%;
+    position: relative;
+    color: var(--text-color);
+}
+
+p.numbered::before{
+    content: counter(mynum) ". ";
+    counter-increment: mynum;
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px;
+    color: var(--h2-primary);
+}
+
+.recipe-page .nutrition{
+    color: var(--text-color);
+}
+
+.nutrition p{
+    margin-bottom: 16px;
+}
+
+.nutrition .nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.nutrition-table .row{
+    border-bottom: solid 1px var(--ligne-color);
+}
+
+.nutrition .row .item{
+    padding: 12px 0 15px 35px;
+}
+
+.nutrition .row .info{
+    padding-left: 10px;
+    color: var(--h2-primary);
+    font-weight: 600;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+.attribution a:visited{
+    color: red;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}

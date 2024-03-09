@@ -1,0 +1,16 @@
+:root{
+    /* Titles color */
+    --h1-primary: hsl(24, 5%, 18%);
+    --h2-primary: hsl(14, 45%, 36%);
+    --h3-primary: hsl(332, 51%, 32%);
+
+    /* Backgrounds-color */
+    --beckground-body: hsl(30, 54%, 90%);
+    --beckground-prep: hsl(330, 100%, 98%);
+
+    /* Letter colors */
+    --text-color: hsl(30, 10%, 34%);
+
+    /* Line color */
+    --ligne-color: hsl(30, 18%, 87%);
+}
