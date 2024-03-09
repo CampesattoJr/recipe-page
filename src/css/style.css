@@ -53,7 +53,7 @@ body{
     margin-bottom: 30px;
 }
 
-.prep-time h3{
+.prep-time h2{
     color: var(--h3-primary);
     font-weight: 600;
     font-size: 1.25rem; 
